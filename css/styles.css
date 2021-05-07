@@ -1,10 +1,208 @@
 
+/*colors*/
+:root{
+    --primary-text-color: #757575;
+    --primary-title-color: #212121;
+    --hover-color:#2196F3;
+    --secondary-text-color: #ffffff;
+    --primary-bg-color: #ffffff;
+    --employe-bg-color: #F5F4FA;
+    --secondary-bg-color: #2F303A;
+}
+a {
+    text-decoration: none;
+    color: inherit;} 
+address {
+    font-style: inherit;
+}
+
+/* nav */
 .logo{
 font-family: Raleway;
 font-style: normal;
 font-weight: bold;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.19;
 letter-spacing: 0.03em;
-color: #2196F3;
+color: var(--hover-color);
 }
+
+.color-defult {
+    color:var(--primary-title-color)
+}
+
+/*====body=====*/
+
+.body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    }
+button {
+        background-color: none;
+        font-family: inherit;
+      }
+.button-main {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-bg-color);
+    width: 200px;
+    background-color: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button-main:hover{background-color: var(--hover-color);
+}
+.button{
+    cursor: pointer;
+    background-color: var(--employe-bg-color);
+}
+.button:hover,
+.button:focus{
+    background-color: var(--hover-color);
+}
+/*=====header======*/
+
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+.link.current{
+    color: var(--hover-color);
+}
+.menu-link{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+    color: var(--primary-title-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--hover-color);
+}
+.menu-link:active{
+    color: var(--hover-color);
+}
+.menu-item .menu-link.link.current{
+    color: var(--hover-color);
+}
+
+
+
+/*=====hero======*/
+
+.hero {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+.hero-background{
+    background-color: var(--secondary-bg-color);
+}
+.hidden{
+    color: var(--secondary-text-color);
+}
+
+/*=====features=====*/
+.section-title{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--primary-title-color);
+}
+.features{
+    list-style: none;
+}
+.features-title{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color:var(--primary-title-color);
+}
+.features-text{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.services{
+    list-style: none;
+}
+.employees-section{
+    background-color: var(--employe-bg-color);
+}
+.employees{
+    list-style: none;
+}
+.employees-title{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color:var(--primary-title-color);
+}
+.employees-text{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+/*=======portfolio=======*/
+.portfolio-title{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color:var(--primary-title-color)
+}
+.portfolio-about{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
+/*=======footer=======*/
+
+.footer{
+    background-color: #2F303A;
+    color: var(--primary-bg-color);
+}
+.colorwhite{
+    color: var(--secondary-text-color);
+}
+.address-title{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.address-subject .menu-link{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--primary-text-color);
+}
+.address-subject .menu-link:hover,
+.address-subject .menu-link:focus {
+    color: var(--hover-color)}
