@@ -75,7 +75,7 @@ button {
 .link{
     text-decoration: none;
 }
-.link.current{
+.link .current{
     color: var(--hover-color);
 }
 .menu-link{
