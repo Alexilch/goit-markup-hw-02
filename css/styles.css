@@ -9,10 +9,11 @@
     --employe-bg-color: #F5F4FA;
     --secondary-bg-color: #2F303A;
 }
-a {
+a{
     text-decoration: none;
-    color: inherit;} 
-address {
+    color: inherit;
+} 
+address{
     font-style: inherit;
 }
 
@@ -26,24 +27,25 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--hover-color);
 }
-
-.color-defult {
+.color-defult{
     color:var(--primary-title-color)
 }
 
 /*====body=====*/
 
-.body {
+.body{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-    }
-button {
-        background-color: none;
-        font-family: inherit;
-      }
-.button-main {
+}
+button{
+    background-color: none;
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+.button-main{
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
@@ -57,20 +59,31 @@ button {
     background-color: var(--hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.button-main:hover{background-color: var(--hover-color);
+.button-main:hover{
+    background-color: var(--hover-color);
 }
 .button{
-    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor:pointer;
     background-color: var(--employe-bg-color);
 }
 .button:hover,
 .button:focus{
     background-color: var(--hover-color);
 }
-/*=====header======*/
 
+/*=====header======*/
 .list{
     list-style: none;
+}
+.menu .menu-link.current{
+    color: var(--hover-color);
 }
 .link{
     text-decoration: none;
@@ -87,7 +100,7 @@ button {
     color: var(--primary-title-color);
 }
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus{
     color: var(--hover-color);
 }
 .menu-link:active{
@@ -96,12 +109,8 @@ button {
 .menu-item .menu-link.link.current{
     color: var(--hover-color);
 }
-
-
-
 /*=====hero======*/
-
-.hero {
+.hero{
     font-family: Roboto;
     font-weight: 900;
     font-size: 44px;
@@ -114,8 +123,16 @@ button {
 .hero-background{
     background-color: var(--secondary-bg-color);
 }
-.hidden{
-    color: var(--secondary-text-color);
+.visually-hiden:not(:focus):not(:active){
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip:rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*=====features=====*/
@@ -182,9 +199,7 @@ button {
     line-height: 1.87;
     letter-spacing: 0.03em;
 }
-
 /*=======footer=======*/
-
 .footer{
     background-color: #2F303A;
     color: var(--primary-bg-color);
@@ -204,5 +219,6 @@ button {
     color: var(--primary-text-color);
 }
 .address-subject .menu-link:hover,
-.address-subject .menu-link:focus {
-    color: var(--hover-color)}
+.address-subject .menu-link:focus{
+    color: var(--hover-color)
+}
